@@ -1,0 +1,106 @@
+/* .nav-item:hover{
+  
+    padding-left:0px;
+    padding-right:0px;
+    font-size: 18px;
+    text-decoration: underline;
+    /* margin-left: 20px; */
+  
+
+/* .navbar-nav .nav-item .nav-link {
+    transition: color 0.3s ease;
+} */ 
+body{
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.overflow_controller{
+  position: relative;
+  overflow-x: hidden;
+}
+.nav-bar{
+  height: 90px;
+}
+.highlight {
+    background-color: yellow;
+    color: black;
+  }
+  .navbar-nav .nav-link {
+    position: relative;
+    font-size: 18px;
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none; /* Remove the underline */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #FF6347; /* Tomato color */
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #FF6347; /* Tomato color */
+    text-decoration: none; /* Ensure underline doesn't appear on hover */
+  }
+  
+  .navbar-nav .nav-link:hover::before {
+    visibility: visible;
+    width: 100%;
+  }
+  /* ul > li > a:hover{
+    text-decoration: none;
+  } */
+  .navbar-nav .nav-link:hover {
+    text-decoration: none !important; /* Force removal of underline */
+  }
+  .nav-item{
+    text-decoration: none !important;
+  }
+  
+  
+  .box{
+      border: 2px solid gray;
+      padding: 5px;
+  
+  }
+
+/* .nav-item:hover .nav-link {
+    color: red;
+} */
+
+.navbar-toggler {
+    border-color: #106470;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28106, 116, 112, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+@media (max-width: 1150px){
+    
+    .d-flex{
+        padding-bottom: 20px;
+    }}
+
+@media (max-width:1200px){
+        .navbar-brand{
+          padding: 0px;
+          margin: 0px;
+        }
+        .d-flex{
+          flex-direction: column;
+          padding-left: 0px;
+        }
+        .form-control{
+          min-width: 10vw;
+        }
+      }

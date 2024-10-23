@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .updates-section {
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+  .head-line{
+    color: #106470;
+    background-color: #106470;
+    min-width: 80vw;
+    height: 6px;
+    margin-bottom: 30px;
+}
+  
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .updates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+  }
+  
+  .update-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .update-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .update-card-header {
+    padding: 20px;
+    background-color: #378ecd;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .update-card-header h3 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .update-date {
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+    color: #ccc;
+  }
+  
+  .update-card-body {
+    padding: 20px;
+  }
+  
+  .update-card-footer {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .updates-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

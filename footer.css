@@ -1,0 +1,97 @@
+
+/* Footer Styling */
+footer {
+    background-color: #212529;
+    color: #f8f9fa;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #f8f9fa;
+}
+
+.footer-links {
+    padding-left: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: white;
+    background-color: rgb(45, 44, 44);
+    box-shadow: 50px  rgb(42, 40, 40);
+    padding: 5px 50px;
+    text-decoration: none;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.contact-info a {
+    color: #eaeced;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.contact-info a:hover {
+    color: #e96656;
+    background-color: rgba(233, 102, 86, 0.1);
+    box-shadow: 0 0 5px #e96656;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+footer .text-center {
+    border-top: 1px solid #343a40;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    footer h5 {
+        font-size: 1.15rem;
+    }
+
+    .contact-info p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Marquee Container */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background-color: rgb(120, 223, 228);
+}
+
+/* Accordion Styling */
+.accordion {
+    margin: 105px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
